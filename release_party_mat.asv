@@ -1,0 +1,16 @@
+n_beers = 20;
+n_drinks = 10;
+n_shots = 10;
+n_wines = 10;
+
+function [n_beers, n_drinks, n_shots, n_wines]= init(val)
+    n_beers = val;
+    n_drinks = 10;
+    n_shots = 10;
+    n_wines = 10;
+end
+
+function 
+
+%set_param(release_part/beer_gain, Gain, n_beers);
+
