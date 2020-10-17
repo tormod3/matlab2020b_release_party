@@ -1,22 +1,10 @@
-n_beers = 20;
-n_drinks = 10;
-n_shots = 10;
-n_wines = 10;
 
-promille_beer = 0;
-promille_wine = 0;
-promille_shot = 0;
-promille_drink = 0;
-
-%n_beers = update_beers(n_beers);
-
-%set_param(release_part/beer_gain, Gain, n_beers);
-%check_drinks();
 init();
 add_beer(10);
 add_wine(10);
 add_drink(10);
 add_shot(10);
+n_people = 3;
 for i=1:3
     SimOut = sim('release_party', 'ReturnWorkspaceOutputs', 'on');
 
