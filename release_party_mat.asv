@@ -3,14 +3,25 @@ n_drinks = 10;
 n_shots = 10;
 n_wines = 10;
 
-function [n_beers, n_drinks, n_shots, n_wines]= init(val)
-    n_beers = val;
-    n_drinks = 10;
-    n_shots = 10;
-    n_wines = 10;
-end
+promille_beer = 0;
+promille_wine = 0;
+promille_shot = 0;
+promille_drink = 0;
 
-function 
+%n_beers = update_beers(n_beers);
 
 %set_param(release_part/beer_gain, Gain, n_beers);
+%check_drinks();
+init();
+add_beer();
+add_wine();
+add_drink();
+add_shot();
+for i=1:12
+    SimOut = sim('release_party', 'ReturnWorkspaceOutputs', 'on');
 
+    promille_beer = SimOut.beer_promille.Data(length(out.beer_promille.Data));
+    promille_wine = SimOut.wine_promille.Data(length(out.wine_promille.Data));
+    promille_drink = SimOut.drink_promille.Data(length(out.drink_promille.Data));
+    promille_shot = SimOut.shot_promille.Data(length(out.shot_promille.Data));
+end
