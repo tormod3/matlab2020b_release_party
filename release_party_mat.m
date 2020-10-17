@@ -20,8 +20,8 @@ add_shot(10);
 for i=1:3
     SimOut = sim('release_party', 'ReturnWorkspaceOutputs', 'on');
 
-    promille_beer = SimOut.beer_promille.Data(length(out.beer_promille.Data));
-    promille_wine = SimOut.wine_promille.Data(length(out.wine_promille.Data));
-    promille_drink = SimOut.drink_promille.Data(length(out.drink_promille.Data));
-    promille_shot = SimOut.shot_promille.Data(length(out.shot_promille.Data));
+    promille_beer = SimOut.beer_promille.Data(length(SimOut.beer_promille.Data));
+    promille_wine = SimOut.wine_promille.Data(length(SimOut.wine_promille.Data));
+    promille_drink = SimOut.drink_promille.Data(length(SimOut.drink_promille.Data));
+    promille_shot = SimOut.shot_promille.Data(length(SimOut.shot_promille.Data));
 end
